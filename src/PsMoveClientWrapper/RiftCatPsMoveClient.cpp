@@ -246,7 +246,9 @@ PsMoveServiceResult^ RiftCatPsMoveClient::update()
 
 				//WriteToFreepie(sensorData2, 2);
 			}
-
+			if (moveView.StartButton == PSMButtonState_DOWN && moveView.StartButton == PSMButtonState_DOWN) {
+				result->Recenter = true;
+			}
 		}
 	}
 	return result;
